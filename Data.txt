@@ -1,7 +1,9 @@
 sudo ufw allow 'Nginx HTTP' && sudo ufw allow 'OpenSSH' && sudo ufw enable  
 
 sudo mysql_secure_installation
+
 CREATE DATABASE wordpress_db;
+sudo mysql
 CREATE USER 'wordpress_user'@'localhost' IDENTIFIED BY 'Abin@1999@';
 GRANT ALL PRIVILEGES ON wordpress_db.* to wordpress_user@'localhost';
 FLUSH PRIVILEGES;
